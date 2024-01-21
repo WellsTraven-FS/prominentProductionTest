@@ -4,6 +4,7 @@ const API_BASE =
     process.env.NODE_ENV === "development"
         ? "http://localhost:4000/api/v1"
         : process.env.REACT_APP_BASE_URL;
+
 const API_URL = "/auth";
 
 const signup = (email, password) => {
