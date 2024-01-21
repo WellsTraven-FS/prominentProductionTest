@@ -1,11 +1,16 @@
 import axios from "axios";
 
-const API_BASE =
-    process.env.NODE_ENV === "development"
-        ? "http://localhost:4000/api/v1"
-        : process.env.REACT_APP_BASE_URL;
+// const API_BASE =
+//     process.env.NODE_ENV === "development"
+//         ? "http://localhost:4000/api/v1"
+//         : process.env.REACT_APP_BASE_URL;
 
+const API_BASE = process.env.REACT_APP_MY_URL;
 const API_URL = "/auth";
+
+console.log(
+    "STATUS: Just REACT_APP_MY_URL updated and workign by itself without the express"
+);
 
 const signup = (email, password) => {
     return axios
