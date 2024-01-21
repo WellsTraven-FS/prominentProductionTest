@@ -21,8 +21,8 @@ db.once("open", () => console.log("Database Connection Established"));
 const memberRouter = require("./routes/members");
 const authRouter = require("./routes/auth");
 app.use(express.json());
-app.use((_req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "*");
     next();
 });
