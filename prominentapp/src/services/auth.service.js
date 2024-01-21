@@ -5,7 +5,7 @@ import axios from "axios";
 //         ? "http://localhost:4000/api/v1"
 //         : process.env.REACT_APP_BASE_URL;
 
-const API_BASE = process.env.REACT_APP_MY_URL || process.env.REACT_APP_BASE_URL;
+const API_BASE = process.env.REACT_APP_MY_URL;
 const API_URL = "/auth";
 
 console.log(
