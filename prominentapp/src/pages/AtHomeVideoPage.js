@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 // Home Workout Videos
 import HomeVideo1 from "../homeVideos/HomeVideo1.mp4";
-import HomeVideo2 from "../homeVideos/HomeVideo2.mp4";
 
 const AtHomeVideoPage = () => {
     const [isHover, setIsHover] = useState(false);
@@ -51,15 +50,6 @@ const AtHomeVideoPage = () => {
                             controls
                         />
                         <p>HIIT Day One</p>
-                    </section>
-                    <section>
-                        <video
-                            src={HomeVideo2}
-                            width="300px"
-                            height="300px"
-                            controls
-                        />
-                        <p>HIIT Day Two</p>
                     </section>
                 </section>
                 <section style={styles.spacingEdit}>

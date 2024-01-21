@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 
 // Gym Workout Videos
 import JumpBattleRopeVideo from "../videos/JumpBattleRope.MP4";
-import BenchPressVideo from "../videos/BenchPress.MP4";
-import ChestFliesVideo from "../videos/ChestFlies.MP4";
-import BicepsVideo from "../videos/Biceps.MP4";
 
 const AtGymVideoPage = () => {
     const [isHover, setIsHover] = useState(false);
@@ -52,33 +49,6 @@ const AtGymVideoPage = () => {
                             controls
                         />
                         <p>Jump Battle Rope</p>
-                    </section>
-                    <section>
-                        <video
-                            src={BenchPressVideo}
-                            width="300px"
-                            height="300px"
-                            controls
-                        />
-                        <p>Bench BenchPress</p>
-                    </section>
-                    <section>
-                        <video
-                            src={ChestFliesVideo}
-                            width="300px"
-                            height="300px"
-                            controls
-                        />
-                        <p>Chest Chest Flies</p>
-                    </section>
-                    <section>
-                        <video
-                            src={BicepsVideo}
-                            width="300px"
-                            height="300px"
-                            controls
-                        />
-                        <p>Biceps</p>
                     </section>
                 </section>
                 <section style={styles.spacingEdit}>
