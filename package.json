@@ -9,10 +9,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "npm start --prefix api",
-        "heroku-postbuild": "concurrently \"npm i --prefix api\" \"npm i --prefix prominentapp\"; concurrently  \"npm run build --prefix prominentapp\"; "
+        "heroku-postbuild": "npm i --prefix api ; npm i --prefix prominentapp ; npm run build --prefix prominentapp"
     },
     "dependencies": {
-        "concurrently": "^8.2.2",
         "cors": "^2.8.5",
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
