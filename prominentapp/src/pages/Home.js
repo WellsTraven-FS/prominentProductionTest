@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import AtHomePhoto from "../images/atHomePhoto.jpg";
-import AtGymPhoto from "../images/atGymPhoto.jpeg";
+// import AtHomePhoto from "../../public/images/atHomePhoto.jpg";
+// import AtGymPhoto from "../../public/images/atGymPhoto.jpeg";
+
 const Home = () => {
     const [isHover, setIsHover] = useState(false);
 
@@ -43,7 +44,7 @@ const Home = () => {
                         <h2>Home Workouts</h2>
                         <Link to="/atHomeVideo">
                             <img
-                                src={AtHomePhoto}
+                                src="/images/atHomePhoto.jpg"
                                 alt=""
                                 style={styles.atHomeImgEdit}
                             />
@@ -54,7 +55,7 @@ const Home = () => {
                         <h2>Gym Workouts</h2>
                         <Link to="/atGymVideo">
                             <img
-                                src={AtGymPhoto}
+                                src="/images/atGymPhoto.jpeg"
                                 alt=""
                                 style={styles.atGymImgEdit}
                             />

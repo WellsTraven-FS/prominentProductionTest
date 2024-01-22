@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // Images Imports
-import GymCoverImg from "../images/gymCover.jpeg";
+// import GymCoverImg from "../images/gymCover.jpeg";
 
 const Dashboard = () => {
     // Signup Button Functions
@@ -73,7 +73,7 @@ const Dashboard = () => {
                 <section style={styles.sectionEdit}>
                     <img
                         style={styles.gymCoverImgEdit}
-                        src={GymCoverImg}
+                        src="/images/gymCover.jpeg"
                         alt=""
                     />
                 </section>

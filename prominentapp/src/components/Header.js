@@ -1,13 +1,21 @@
 import React from "react";
-import LogoImg from "../images/Logo.jpeg";
+// import LogoImg from "../images/Logo.jpeg";
 
 const Header = () => {
     return (
         <section>
             <header style={styles.header}>
-                <img style={styles.leftImgEdit} src={LogoImg} alt="" />
+                <img
+                    style={styles.leftImgEdit}
+                    src="/images/Logo.jpeg"
+                    alt=""
+                />
                 <h1 style={styles.h1Edit}>PROMINENT</h1>
-                <img style={styles.RightImgEdit} src={LogoImg} alt="" />
+                <img
+                    style={styles.RightImgEdit}
+                    src="/images/Logo.jpeg"
+                    alt=""
+                />
             </header>
         </section>
     );
