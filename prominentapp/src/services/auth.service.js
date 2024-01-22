@@ -5,16 +5,18 @@ import axios from "axios";
 //         ? "http://localhost:4000/api/v1"
 //         : process.env.REACT_APP_BASE_URL;
 
-const API_BASE = process.env.REACT_APP_MY_URL;
-const API_URL = "/auth";
+// const API_BASE = process.env.REACT_APP_MY_URL;
 
-console.log(
-    "STATUS: Just REACT_APP_MY_URL updated and workign by itself without the express"
-);
+const SCHEME = process.env.REACT_APP_SCHEME;
+const SERVER = process.env.REACT_APP_SERVER;
+const PORT = process.env.NODE_ENV === "development" ? "4000" : process.env.PORT;
+const API_URL = process.env.REACT_APP_API_URL + "/auth";
 
+const API_BASE = SCHEME + SERVER + PORT + API_URL;
+console.log(API_BASE);
 const signup = (email, password) => {
     return axios
-        .post(`${API_BASE}${API_URL}/`, {
+        .post(`${API_BASE}/`, {
             email,
             password,
         })
@@ -28,7 +30,7 @@ const signup = (email, password) => {
 
 const login = (email, password) => {
     return axios
-        .post(`${API_BASE}${API_URL}/signin`, {
+        .post(`${API_BASE}/signin`, {
             email,
             password,
         })

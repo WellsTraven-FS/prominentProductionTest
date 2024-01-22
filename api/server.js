@@ -30,8 +30,6 @@ const buildPath = path.join(__dirname, "../prominentapp/build");
 
 app.use(express.static(buildPath));
 
-// app.use(express.static(path.join(__dirname, "../prominentapp/public")));
-
 // For any routes not defined by the api, assume it's a direct request to a client-side route
 app.get("/*", (req, res) => {
     res.sendFile(
