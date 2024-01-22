@@ -14,6 +14,7 @@ const API_URL = process.env.REACT_APP_API_URL + "/auth";
 
 const API_BASE = SCHEME + SERVER + PORT + API_URL;
 console.log(API_BASE);
+console.log(process.env.NODE_ENV);
 const signup = (email, password) => {
     return axios
         .post(`${API_BASE}/`, {
