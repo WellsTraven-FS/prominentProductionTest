@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "cd api && node server.js"
+        "start": "npm start --prefix api",
+        "heroku-postbuild": "concurrently \"npm i --prefix api\" \"npm i --prefix prominentapp\"; concurrently  \"npm run build --prefix prominentapp\"; "
     },
     "dependencies": {
         "bcrypt-nodejs": "^0.0.3",
