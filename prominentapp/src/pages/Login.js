@@ -11,18 +11,17 @@ function Login() {
 
     const handleLogin = async (event) => {
         event.preventDefault();
-        try {
-            await AuthService.login(email, password).then(
+
+        AuthService.login(email, password)
+            .then(
                 (response) => {
                     navigate("/home");
                 },
                 (error) => {
                     console.error(error.message);
                 }
-            );
-        } catch (error) {
-            console.error(error.message);
-        }
+            )
+            .catch((error) => console.log(error));
     };
     return (
         <div>
