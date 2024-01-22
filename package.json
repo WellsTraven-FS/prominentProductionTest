@@ -12,7 +12,6 @@
         "heroku-postbuild": "concurrently \"npm i --prefix api\" \"npm i --prefix prominentapp\"; concurrently  \"npm run build --prefix prominentapp\"; "
     },
     "dependencies": {
-        "bcrypt-nodejs": "^0.0.3",
         "concurrently": "^8.2.2",
         "cors": "^2.8.5",
         "dotenv": "^16.3.1",
