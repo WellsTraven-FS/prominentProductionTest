@@ -16,12 +16,12 @@ function Login() {
             .then(
                 (response) => {
                     navigate("/home");
-                },
-                (error) => {
-                    console.error(error.message);
                 }
+                // (error) => {
+                //     console.error(error.message);
+                // }
             )
-            .catch((error) => console.log(error));
+            .catch((error) => console.log(typeof error));
     };
     return (
         <div>
