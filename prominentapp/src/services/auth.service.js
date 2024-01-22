@@ -9,7 +9,7 @@ import axios from "axios";
 
 const SCHEME = process.env.REACT_APP_SCHEME;
 const SERVER = process.env.REACT_APP_SERVER;
-const PORT = process.env.NODE_ENV === "development" ? "4000" : process.env.PORT;
+const PORT = process.env.NODE_ENV === "development" ? ":4000" : "";
 const API_URL = process.env.REACT_APP_API_URL + "/auth";
 
 const API_BASE = SCHEME + SERVER + PORT + API_URL;
